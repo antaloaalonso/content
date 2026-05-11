@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Sapat provider selection workflow in Daytona</title>
+  <desc id="desc">A workflow diagram showing recordings entering a Daytona workspace, being normalized by ffmpeg, then routed to OpenAI, Groq, or Azure OpenAI before comparison and failover notes.</desc>
+  <rect width="1280" height="720" fill="#f8fafc"/>
+  <rect x="70" y="84" width="230" height="116" rx="16" fill="#0f172a"/>
+  <text x="185" y="132" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="700">Recordings</text>
+  <text x="185" y="166" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="16">mp4 samples</text>
+  <path d="M300 142 H410" stroke="#334155" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <rect x="410" y="84" width="250" height="116" rx="16" fill="#2563eb"/>
+  <text x="535" y="128" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="700">Daytona Workspace</text>
+  <text x="535" y="164" text-anchor="middle" fill="#dbeafe" font-family="Arial, sans-serif" font-size="16">isolated Sapat runbook</text>
+  <path d="M535 200 V278" stroke="#334155" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <rect x="410" y="278" width="250" height="96" rx="14" fill="#0891b2"/>
+  <text x="535" y="318" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="23" font-weight="700">ffmpeg Normalize</text>
+  <text x="535" y="350" text-anchor="middle" fill="#cffafe" font-family="Arial, sans-serif" font-size="16">Sapat MP3 conversion</text>
+  <path d="M410 326 H305 V500 H365" stroke="#334155" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <path d="M535 374 V454" stroke="#334155" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <path d="M660 326 H770 V500 H715" stroke="#334155" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <rect x="145" y="454" width="220" height="106" rx="14" fill="#7c3aed"/>
+  <text x="255" y="495" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="23" font-weight="700">OpenAI</text>
+  <text x="255" y="528" text-anchor="middle" fill="#ede9fe" font-family="Arial, sans-serif" font-size="16">general default</text>
+  <rect x="425" y="454" width="220" height="106" rx="14" fill="#16a34a"/>
+  <text x="535" y="495" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="23" font-weight="700">Groq</text>
+  <text x="535" y="528" text-anchor="middle" fill="#dcfce7" font-family="Arial, sans-serif" font-size="16">fast iteration</text>
+  <rect x="705" y="454" width="220" height="106" rx="14" fill="#ea580c"/>
+  <text x="815" y="495" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="23" font-weight="700">Azure OpenAI</text>
+  <text x="815" y="528" text-anchor="middle" fill="#ffedd5" font-family="Arial, sans-serif" font-size="16">enterprise controls</text>
+  <path d="M365 507 H990" stroke="#334155" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <rect x="990" y="454" width="220" height="106" rx="14" fill="#0f766e"/>
+  <text x="1100" y="495" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="23" font-weight="700">Compare</text>
+  <text x="1100" y="528" text-anchor="middle" fill="#ccfbf1" font-family="Arial, sans-serif" font-size="16">quality, cost, policy</text>
+  <rect x="880" y="112" width="260" height="154" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="1010" y="152" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="22" font-weight="700">Runbook Output</text>
+  <text x="1010" y="190" text-anchor="middle" fill="#475569" font-family="Arial, sans-serif" font-size="16">primary provider</text>
+  <text x="1010" y="220" text-anchor="middle" fill="#475569" font-family="Arial, sans-serif" font-size="16">fallback command</text>
+  <text x="1010" y="250" text-anchor="middle" fill="#475569" font-family="Arial, sans-serif" font-size="16">review checklist</text>
+  <path d="M1100 454 V266" stroke="#334155" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#334155"/>
+    </marker>
+  </defs>
+</svg>
